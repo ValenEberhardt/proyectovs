@@ -50,7 +50,7 @@ body {
 .gatito {
     width: 128px;  /* Ancho de UN SOLO frame */
     height: 128px; /* Alto del frame */
-    background-image: url('/images/michi.png');
+    background-image: url('../images/michi.png');
     image-rendering: pixelated;
     background-position: 0px 0px;
     filter: drop-shadow(0px 8px 4px rgba(0,0,0,0.4));

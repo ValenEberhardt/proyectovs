@@ -6,19 +6,19 @@ const RETRASO_BOCA_ABIERTA_MS = 250;
 // Nuestra partitura. Asignamos un gato y un audio a cada paso.
 // 'tiempoHastaSiguiente' dicta el ritmo de la canción.
 const melodia = [
-    { gatoId: 'gato1', archivoAudio: '/audio/quelosplas.mp3', tiempoHastaSiguiente: 300 },
-    { gatoId: 'gato5', archivoAudio: '/audio/quelosplas.mp3', tiempoHastaSiguiente: 250 },
-    { gatoId: 'gato2', archivoAudio: '/audio/cum.mp3',   tiempoHastaSiguiente: 500 },
-    { gatoId: 'gato1', archivoAudio: '/audio/quelosplas.mp3', tiempoHastaSiguiente: 500 },
-    { gatoId: 'gato4', archivoAudio: '/audio/fe.mp3', tiempoHastaSiguiente: 400 },
-    { gatoId: 'gato3', archivoAudio: '/audio/liz.mp3', tiempoHastaSiguiente: 900 },
+    { gatoId: 'gato1', archivoAudio: '../audio/quelosplas.mp3', tiempoHastaSiguiente: 300 },
+    { gatoId: 'gato5', archivoAudio: '../audio/quelosplas.mp3', tiempoHastaSiguiente: 250 },
+    { gatoId: 'gato2', archivoAudio: '../audio/cum.mp3',   tiempoHastaSiguiente: 500 },
+    { gatoId: 'gato1', archivoAudio: '../audio/quelosplas.mp3', tiempoHastaSiguiente: 500 },
+    { gatoId: 'gato4', archivoAudio: '../audio/fe.mp3', tiempoHastaSiguiente: 400 },
+    { gatoId: 'gato3', archivoAudio: '../audio/liz.mp3', tiempoHastaSiguiente: 900 },
 
-    { gatoId: 'gato1', archivoAudio: '/audio/quelosplas.mp3', tiempoHastaSiguiente: 300 },
-    { gatoId: 'gato5', archivoAudio: '/audio/quelosplas.mp3', tiempoHastaSiguiente: 250 },
-    { gatoId: 'gato2', archivoAudio: '/audio/cum.mp3',   tiempoHastaSiguiente: 500 },
-    { gatoId: 'gato1', archivoAudio: '/audio/quelosplas.mp3', tiempoHastaSiguiente: 500 },
-    { gatoId: 'gato5', archivoAudio: '/audio/fe(2).mp3', tiempoHastaSiguiente: 400 },
-    { gatoId: 'gato3', archivoAudio: '/audio/liz(2).mp3', tiempoHastaSiguiente: 400 },
+    { gatoId: 'gato1', archivoAudio: '../audio/quelosplas.mp3', tiempoHastaSiguiente: 300 },
+    { gatoId: 'gato5', archivoAudio: '../audio/quelosplas.mp3', tiempoHastaSiguiente: 250 },
+    { gatoId: 'gato2', archivoAudio: '../audio/cum.mp3',   tiempoHastaSiguiente: 500 },
+    { gatoId: 'gato1', archivoAudio: '../audio/quelosplas.mp3', tiempoHastaSiguiente: 500 },
+    { gatoId: 'gato5', archivoAudio: '../audio/fe(2).mp3', tiempoHastaSiguiente: 400 },
+    { gatoId: 'gato3', archivoAudio: '../audio/liz(2).mp3', tiempoHastaSiguiente: 400 },
 
     // ... agrega toda la canción aquí
 ];
