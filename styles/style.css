@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Centra todo verticalmente en la pantalla */
+    margin: 0;
+    
+    /* Un degradado radial: luz tenue en el centro, más oscuro en los bordes */
+    background: rgb(226, 223, 212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#btn-empezar {
+    background-color: #d3c2a5; /* El color del gorrito */
+    color: #eee9e9; /* El color del gatito para las letras */
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px; /* Botón redondeado estilo píldora */
+    cursor: pointer;
+    
+  
+}
+
+#btn-empezar:active {
+    transform: translateY(6px);
+    
+}
+
+
+
+#escenario {
+    display: flex;
+    gap: 10px; /* Espacio entre los gatitos */
+    padding: 30px 40px;
+    
+    /* Un contenedor oscuro semitransparente estilo "cristal" */
+    background-color: rgba(123, 96, 57, 0.856); 
+    border-radius: 25px;
+    border: 1px solid rgba(238, 233, 233, 0.1); /* Borde súper sutil */
+    
+    /* Sombra suave para darle profundidad a la plataforma */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+
+.gatito {
+    width: 128px;  /* Ancho de UN SOLO frame */
+    height: 128px; /* Alto del frame */
+    background-image: url('/images/michiIzq.png');
+    image-rendering: pixelated;
+    background-position: 0px 0px;
+    filter: drop-shadow(0px 8px 4px rgba(0,0,0,0.4));
+
+    transform: scale(1.5);
+}
+
+/* Esta clase se la agregaremos con JS cuando le toque cantar */
+.gatito.cantando {
+    /* 0.5s es la duración total. steps(4) salta cuadro por cuadro sin difuminar */
+    animation: animacion-cantar 0.5s steps(6); 
+}
+
+@keyframes animacion-cantar {
+    from { background-position: 0px 0px; }
+    /* -400px es el ancho total de tu spritesheet (100px * 4 frames) */
+    to { background-position: -768px 0px; } 
+}
